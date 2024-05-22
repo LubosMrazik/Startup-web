@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Startup web</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <i class="logo-text">PepperBot</i>
+        </div>
+        <div class="features">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#home">Home</a></li>
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#gallery">Gallery</a></li>
+                <li class="nav-link"><a href="#price">Price</a></li>
+                <li class="nav-link"><a href="#carousel">Carousel</a></li>
+            </ul>
+            <button id="myBtn">Open Modal</button>
+        </div>
+    </nav>
+</header>
+<div id="myModal" class="backdrop">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>This is a very important message about....</p>
+    </div>
+</div>
+<main>
+    <div class="fix" id="home">
+        <div class="main-foto">
+            <img src="assets/images/main.jpg" alt="main-foto">
+        </div>
+        <div class="fix-text">
+            <h1>Fix Your Phone Today</h1>
+            <p class="main-text">Expert mobile repair services at your doorstep. Quick, reliable, and hassle-free solutions for any issue.</p>
+            <button class="get-fixed">Get Fixed</button>
+        </div>
+    </div>
+    <div class="mobile-repair">
+        <h2>Mobile Repair Services in Zlín District</h2>
+        <div class="repair-flex">
+            <div class="repair-item">
+                <img src="assets/images/screen.jpg" alt="Screen Replacement">
+                <div class="item-desc">
+                    <h3>Screen Replacement</h3>
+                    <p>Expert screen replacement for all types of mobile devices, using high-quality parts and professional installation.</p>
+                </div>
+            </div>
+            <div class="repair-item">
+                <img src="assets/images/battery.jpg" alt="Battery Replacement">
+                <div class="item-desc">
+                    <h3>Battery Replacement</h3>
+                    <p>Efficient and reliable battery replacement service to keep your mobile device running smoothly and efficiently.</p>
+                </div>
+            </div>
+            <div class="repair-item">
+                <img src="assets/images/water_damage.jpg" alt="Water damage">
+                <div class="item-desc">
+                    <h3>Water Damage Repair</h3>
+                    <p>Specialized water damage repair to restore functionality and performance to your mobile device after accidents or incidents.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us" id="about">
+        <div class="about-image">
+            <img src="assets/images/about_foto.jpg" alt="about_foto">
+        </div>
+        <div class="about-text">
+            <h2>About us</h2>
+            <p>Welcome to Pepper Bot, your trusted mobile repair service in the Zlín District, Zlín Region. With our expertise and dedication, we strive to provide top-notch repair solutions for all your mobile devices.</p>
+            <br>
+            <p>At Pepper Bot, we understand the importance of having your mobile devices functioning properly. Our team of skilled technicians is committed to delivering efficient and reliable repairs, ensuring that you can stay connected with ease. Whether it's a cracked screen, battery replacement, or any other issue, we've got you covered. Trust Pepper Bot for all your mobile repair needs!</p>
+            <button class="learn-more">LEARN MORE</button>
+        </div>
+    </div>
+    <div class="foto-gallery" id="gallery">
+        <div class="gallery-button" id="rightBtn">
+            <button class="btn" onclick="prevImage()"><<</button>
+        </div>
+        <div class="gallery-foto">
+            <img class="gallery-preview, DOM-img" src="assets/images/image_1.jpg" alt="DOM img">
+        </div>
+        <div class="gallery-button">
+            <button class="btn" onclick="nextImage()">>></button>
+        </div>
+        <img class="DOM-img inv" src="assets/images/image_1.jpg" alt="image1">
+        <img class="DOM-img inv" src="assets/images/image_2.jpg" alt="image2">
+        <img class="DOM-img inv" src="assets/images/image_3.jpg" alt="image3">
+        <img class="DOM-img inv" src="assets/images/image_4.jpg" alt="image4">
+        <img class="DOM-img inv" src="assets/images/image_5.jpg" alt="image5">
+        <img class="DOM-img inv" src="assets/images/image_6.jpg" alt="image6">
+    </div>
+    <h2 class="table">Pricing table</h2>
+    <div class="pricing" id="price">
+        <div class="pricing-item">
+            <img src="assets/images/basic.jpg" alt="Basic repair">
+            <h4>Basic repair</h4>
+            <p class="price">$50</p>
+            <p class="price-text">per repair</p>
+            <button class="more-info">More info</button>
+            <p class="price-text">Standard repair service for mobile devices.</p>
+            <br>
+            <ul class="positives">
+                <li>Standard</li>
+                <li>Quick</li>
+                <li>Efficient</li>
+            </ul>
+        </div>
+        <div class="pricing-item">
+            <img src="assets/images/advanced.jpg" alt="Advanced repair">
+            <h4>Advanced repair</h4>
+            <p class="price">$80</p>
+            <p class="price-text">per repair</p>
+            <button class="more-info">More info</button>
+            <p class="price-text">Advanced repair service for mobile devices, including software and hardware issues.</p>
+            <ul class="positives">
+                <li>Advanced</li>
+                <li>Thorough</li>
+                <li>Specialized</li>
+            </ul>
+        </div>
+        <div class="pricing-item">
+            <img src="assets/images/premium.jpg" alt="Premium repair">
+            <h4>Premium repair</h4>
+            <p class="price">$120</p>
+            <p class="price-text">per repair</p>
+            <button class="more-info">More info</button>
+            <p class="price-text">Premium repair service for mobile devices, with priority handling and extended warranty.</p>
+            <ul class="positives">
+                <li>Priority</li>
+                <li>Extended</li>
+                <li>Warranty</li>
+            </ul>
+        </div>
+    </div>
+    <div class="border">
+        <h2>Customers feedback</h2>
+        <div class="customers" id="carousel">
+            <button class="btn2" onclick="prevPerson()"><</button>
+            <div class="customers-about">
+                <img id="person-image" src="assets/images/profile/person_1.jpg" alt="person image">
+                <p id="person-quote">quote</p>
+                <p id="person-name">name</p>
+            </div>
+            <button class="btn2" onclick="nextPerson()">></button>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <div class="logo">
+                <i class="logo-text">PepperBot</i>
+            </div>
+            <div class="features">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#gallery">Gallery</a></li>
+                    <li class="nav-link"><a href="#price">Price</a></li>
+                    <li class="nav-link"><a href="#carousel">Carousel</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </footer>
+</main>
+<script src="assets/scripts/script.js"></script>
+</body>
+</html>
